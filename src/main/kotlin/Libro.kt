@@ -1,0 +1,1 @@
+data class Libro(val id: String, val titulo: String, val autor: String, val fechaDePublicacion: String, val tematica: String, var estado: EstadoLibro)
