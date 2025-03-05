@@ -1,4 +1,5 @@
 class InterfazDeUsuario {
+    val utilidadesLibro = UtilidadesLibro()
     fun mostrarMenu(): Int {
         print("1) agregar elemento\n2) eliminar elemento\n3) realizar prestamo\n4) realizar devolucion\n5) consultar disponibilidad\n6) mostrar todos los elementos\nelige una opcion: ")
         val opcion = pedirDato("").toInt()
@@ -6,7 +7,7 @@ class InterfazDeUsuario {
     }
 
     fun accionAgregarElemento(): Libro {
-        val id = pedirDato("id del elemento: ")
+        val id = utilidadesLibro.id
         val titulo = pedirDato("titulo del elemento: ")
         val autor = pedirDato("autor del elemento: ")
         val fechaDePublicacion = pedirDato("fecha de publicacion del elemento: ")
